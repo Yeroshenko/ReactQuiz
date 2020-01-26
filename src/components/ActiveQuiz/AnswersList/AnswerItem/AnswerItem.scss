@@ -1,0 +1,15 @@
+.AnswerItem {
+    border: 0.3rem solid #315AA1;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    transition: .2s ease background;
+
+    &:not(:first-child) {
+        margin-top: 2rem;
+    }
+
+    &:hover {
+        background-color: rgba(#FFFFFF, 0.05);
+        cursor: pointer;
+    }
+}
