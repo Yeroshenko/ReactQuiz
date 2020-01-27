@@ -1,0 +1,41 @@
+.btn {
+    padding: 1.5rem 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #107EEB;
+    border-radius: 3rem;
+    border: none;
+    transition: .3s all;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #278AED;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        box-shadow: inset .4rem .4rem .2rem rgba(#000000, .3)
+    }
+
+    &:disabled {
+        background-color: #DCDFE9;
+        cursor: not-allowed;
+    }
+
+    &.success {
+        background-color: #1FEB50;
+    }
+
+       
+    .error {
+        background-color: #FF0000;
+    }
+
+    .primary {
+
+    }
+}

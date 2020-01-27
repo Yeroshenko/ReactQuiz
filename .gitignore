@@ -9,8 +9,6 @@
 # production
 /build
 
-# design
-.omaquizallscreens.png
 
 # misc
 .DS_Store

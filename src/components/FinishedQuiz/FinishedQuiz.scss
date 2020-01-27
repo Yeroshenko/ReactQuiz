@@ -21,9 +21,14 @@
         }
     }
 
-    &__btn {
-        display: block;
+    &__btns {
         margin: 3rem auto 0;
+        display: flex;
+        .btn {
+            &:nth-child(2) {
+                margin-left: 3rem;
+            }
+        }
     }
 
 }

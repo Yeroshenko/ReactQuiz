@@ -19,19 +19,3 @@
     transition: .1s ease all;
 }
 
-.btn {
-    padding: 1.5rem 2rem;
-    font-weight: 600;
-    font-size: 2rem;
-    color: #FFFFFF;
-    background-color: #107EEB;
-    border-radius: 3rem;
-    border: none;
-    transition: .3s all;
-    outline: none;
-
-    &:hover {
-        cursor: pointer;
-        background-color: #278AED;
-    }
-}
