@@ -5,7 +5,7 @@ import './Layout.scss'
 export default class Layout extends Component {
     render() {
         return (
-            <div className = 'layout'>
+            <div className = 'Layout'>
                 <main>
                     { this.props.children }
                 </main>

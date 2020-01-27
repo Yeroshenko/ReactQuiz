@@ -1,14 +1,18 @@
-.quiz {
+.Quiz {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 10rem;
     flex-grow: 1;
     background-color: #DEE0EB;
-
-    &-inner {
-        width: 100%;
-        max-width: 60rem;
-    }
 }
 
+.QuizWrapper {
+    width: 100%;
+    max-width: 60rem;
+
+    h1 {
+        padding: 2rem;
+        color: #252C4A;
+    }
+}

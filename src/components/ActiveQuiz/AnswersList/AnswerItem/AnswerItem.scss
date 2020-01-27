@@ -1,5 +1,9 @@
-.answer-item {
-    
+.AnswerItem {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 0.3rem solid #315AA1;
+    transition: .1s ease all;
+
     &:not(:first-child) {
         margin-top: 2rem;
     }
@@ -8,7 +12,7 @@
         background-color: rgba(#FFFFFF, 0.05);
         cursor: pointer;
     }
-    
+
     &.success {
      border-color: #1FEB00;
     }

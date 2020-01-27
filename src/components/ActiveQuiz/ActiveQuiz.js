@@ -6,15 +6,15 @@ import './ActiveQuiz.scss'
 
 const ActiveQuiz = (props) => {
     return(
-        <div className = 'card'>
-            <div className = 'question card-title'>
-                <span>
-                    <strong>{props.answerNumber}.</strong>&nbsp;
+        <div className = 'ActiveQuiz'>
+            <div className = 'Question'>
+                <span className = 'QuestionTitle'>
+                    <strong>2.</strong>&nbsp;
                     {props.question}
                 </span>
-                <small>
+                <span>
                     {props.answerNumber}/<small>{props.quizLength}</small>
-                </small>
+                </span>
                 
             </div>
 

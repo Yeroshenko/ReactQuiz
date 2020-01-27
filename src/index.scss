@@ -9,7 +9,9 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   font-size: 1.8rem;
   color: #FFFFFF;
 }
@@ -27,6 +29,3 @@ ul, li {
   list-style: none;
 }
 
-button {
-  font-family: inherit;
-}
