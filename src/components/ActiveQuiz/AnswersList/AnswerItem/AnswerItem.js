@@ -4,7 +4,7 @@ import './AnswerItem.scss'
 
 const AnswerItem = (props) => {
     
-    let cls = 'AnswerItem'
+    let cls = 'list-item answer-item'
 
     if(props.state) {
         cls = `${cls} ${props.state}`

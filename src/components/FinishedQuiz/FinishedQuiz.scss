@@ -1,0 +1,29 @@
+.finished-quiz {
+
+    .list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+    } 
+
+    .fa {
+        margin-left: 1rem;
+
+        &.success {
+            color: #1FEB00;
+           }
+        &.error {
+            color: #FF0000;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 3rem auto 0;
+    }
+
+}
