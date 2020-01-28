@@ -11,11 +11,14 @@
     }
 }
 
-
 .list-item {
     padding: 1rem 1.5rem;
     border-radius: 2rem;
     border: 0.3rem solid #107EEB;
     transition: .1s ease all;
+
+    &:active {
+        box-shadow: inset .4rem .4rem .2rem rgba(#000000, .3)
+    }
 }
 

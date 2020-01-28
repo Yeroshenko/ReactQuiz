@@ -1,0 +1,10 @@
+.Backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#000000, .7);
+    transition: .2s all ease-in;
+    z-index: 8;
+}
