@@ -6,7 +6,7 @@ import Bacdrop from '../../Ui/Backdrop/Backdrop'
 import './Drawer.scss'
 
 const links = [
-    {to: '/', label: 'Список', exact: true},
+    {to: '/', label: 'Список тестов', exact: true},
     {to: '/auth', label: 'Авторизация', exact: false},
     {to: '/quiz-creator', label: 'Создать тест', exact: false}
 ]

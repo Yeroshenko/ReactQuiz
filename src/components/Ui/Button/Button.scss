@@ -8,9 +8,60 @@
     border: none;
     transition: .3s all;
 
+    &.success {
+        background-color: #1FEB50;
+
+        &-left {
+            @extend .success;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &-right {
+            @extend .success;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:active { box-shadow: inset -0.4rem .4rem .2rem rgba(#000000, .3) }
+        }
+    }
+
+       
+    &.error {
+        background-color: #FF0000;
+
+        &-left {
+            @extend .error;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &-right {
+            @extend .error;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:active { box-shadow: inset -0.4rem .4rem .2rem rgba(#000000, .3) }
+        }
+    }
+
+    &.primary {
+        background-color: #107EEB;
+        
+        &-left {
+            @extend .primary;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &-right {
+            @extend .primary;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            &:active { box-shadow: inset -0.4rem .4rem .2rem rgba(#000000, .3) }
+        }
+    }
+
     &:hover {
         cursor: pointer;
-        background-color: #278AED;
     }
 
     &:focus {
@@ -22,20 +73,22 @@
     }
 
     &:disabled {
-        background-color: #DCDFE9;
         cursor: not-allowed;
-    }
-
-    &.success {
-        background-color: #1FEB50;
-    }
-
-       
-    .error {
-        background-color: #FF0000;
-    }
-
-    .primary {
-
+        position: relative;
+        
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border-radius: inherit;
+            opacity: .3;
+        } 
     }
 }

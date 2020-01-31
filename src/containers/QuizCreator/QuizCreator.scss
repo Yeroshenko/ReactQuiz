@@ -1,0 +1,36 @@
+.quiz-creator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-inner {
+        width: 100%;
+        max-width: 60rem;
+        
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+
+    hr {
+        width: 95%;
+        height: .1rem;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        border-color: #8C95BD;
+        border-style: dashed;
+        opacity: .5;
+    }
+
+    button {
+        margin-top: 2rem;
+
+        &:last-child {
+            margin-left: 6rem;
+        }
+    }
+}

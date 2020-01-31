@@ -9,7 +9,7 @@ class QuizList extends Component {
         return [1, 2, 3].map((quiz, index) => {
             return (
                 <li key = {index} 
-                    className = 'QuizList-item list-item' >
+                    className = 'quizList-item list-item' >
                     <NavLink to = {'quiz/' + quiz}>
                         Тест {quiz}
                     </NavLink>
@@ -20,8 +20,8 @@ class QuizList extends Component {
 
     render() {
         return (
-            <div className = 'QuizList'>
-                <div className = 'QuizList-inner card'>
+            <div className = 'quizList'>
+                <div className = 'quizList-inner card'>
                    <h1 className = 'card-title'>Список тестов</h1> 
 
                    <ul>

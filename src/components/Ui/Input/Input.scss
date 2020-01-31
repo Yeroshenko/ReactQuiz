@@ -1,0 +1,41 @@
+.input {
+
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    label {
+        margin-left: .5rem;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        font-weight: 400;
+        font-size: 2rem;
+        color: #FFF;
+        background-color: transparent;
+        border-radius: 2rem;
+        border: 0.3rem solid #107EEB;
+        transition: .1s ease all;
+        outline: none;
+
+        &:focus {
+            border-color: #1FEB50;
+        }
+        
+    }
+
+    span {
+        display: block;
+        margin-top: .5rem;
+        text-align: center;
+        font-size: 1.6rem;
+        color: #FF0000;
+    }
+
+    &.invalid input {
+        border-color: #FF0000;
+    }
+}
