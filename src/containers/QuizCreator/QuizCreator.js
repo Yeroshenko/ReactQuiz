@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from '../../axios/axios-quiz'
 
 import { Button, Input, Select } from '../../components/Ui'
 import { createControl, validate, validateForm } from '../../form/formFramework'
@@ -35,7 +36,7 @@ export default class QuizCreator extends Component {
         formControls: createFormControls()
     }
     
-    submitHandle = (e) => {
+    submitHandler = (e) => {
         e.preventDefault()
     }
 
@@ -69,11 +70,23 @@ export default class QuizCreator extends Component {
         })
     }
 
-    createQuizHandler = (e) => {
+    createQuizHandler = async (e) => {
         e.preventDefault()
 
-        console.log(this.state.quiz)
-        // TODO: Server
+
+        try {
+            await axios.post('quizes.json', this.state.quiz)
+            
+            this.setState({
+                quiz: [],
+                isFormValid: false,
+                rightAnswerId: 1,
+                formControls: createFormControls()
+            })
+        } catch (e) {
+            console.log(e)
+        }
+
     }
 
     changeHandler= (value, controlName) => {
@@ -128,10 +141,10 @@ export default class QuizCreator extends Component {
             value = {this.state.rightAnswerId}
             onChange = {this.selectChangeHandler} 
             options = {[
-                {text: 1, value: 1},
-                {text: 2, value: 2},
-                {text: 3, value: 3},
-                {text: 4, value: 4}
+                {text: 'Вариант 1', value: 1},
+                {text: 'Вариант 2', value: 2},
+                {text: 'Вариант 3', value: 3},
+                {text: 'Вариант 4', value: 4}
             ]} />
 
         return (
@@ -139,7 +152,7 @@ export default class QuizCreator extends Component {
                 <div className = 'quiz-creator-inner card'>
                     <h1 className = 'card-title'>Создание теста</h1>
                     
-                    <form onSubmit = {this.submitHandle} >
+                    <form onSubmit = {this.submitHandler} >
 
                         { this.renderControls() }
                         
@@ -154,7 +167,7 @@ export default class QuizCreator extends Component {
                         <Button
                             type = 'success'
                             onClick = {this.createQuizHandler}
-                            disabled = {!this.state.quiz.length === 0}>
+                            disabled = {this.state.quiz.length === 0}>
                             Создать тест
                         </Button>
                     </form>

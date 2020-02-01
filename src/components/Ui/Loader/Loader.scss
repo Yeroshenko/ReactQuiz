@@ -1,0 +1,17 @@
+@keyframes load {
+
+    100%{
+      opacity: 0.08;
+      filter: blur(.5rem);
+      letter-spacing: .3rem;
+    }
+  
+  }
+  
+  .loader {
+    height:100%;
+    font-size: 2rem;
+    animation: load 1.2s infinite 0s ease-in-out;
+    animation-direction: alternate;
+    text-shadow: 0 0 .1rem white;
+  }
