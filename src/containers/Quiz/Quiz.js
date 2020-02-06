@@ -26,7 +26,9 @@ class Quiz extends Component {
 
                     {
                         this.props.loading || !this.props.quiz
-                            ? <Loader />
+                            ? <div className = 'card'>
+                                <Loader />
+                              </div>
                             :  this.props.isFinished 
                                 ? <FinishedQuiz 
                                     results = {this.props.results} 
