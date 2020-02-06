@@ -33,7 +33,7 @@ export function fetchQuizes() {
 
 export function fetchQuizById(quizId) {
     return async (dispatch) => {
-        dispatch(fetchQuizesStart)
+        dispatch(fetchQuizesStart())
 
         try {
             const response = await axios.get(`quizes/${quizId}.json`)
